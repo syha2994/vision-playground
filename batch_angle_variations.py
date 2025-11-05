@@ -76,7 +76,7 @@ def initialize_pipeline(use_cpu_offload=False):
     print("Lightning LoRA 로딩 중...")
     pipe.load_lora_weights(
         "lightx2v/Qwen-Image-Lightning", 
-        weight_name="Qwen-Image-fp8-e4m3fn-Lightning-4steps-V1.0-bf16.safetensors",
+        weight_name="Qwen-Image-fp8-e4m3fn-Lightning-4steps-V1.0-fp32.safetensors",
         adapter_name="lightning"
     )
     
